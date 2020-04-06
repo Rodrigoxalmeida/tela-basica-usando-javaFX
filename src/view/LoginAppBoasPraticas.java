@@ -24,6 +24,7 @@ public class LoginAppBoasPraticas extends Application {
 	private static Stage stage;
 	private Label tex;
 	private Label titulo;
+	private Label teste;
 
 	@Override
 	public void start(Stage stage) throws Exception {
@@ -58,7 +59,8 @@ public class LoginAppBoasPraticas extends Application {
 		btSair = new Button("Sair");
 		tex = new Label("Desenvolvimento JavaFX - Boas Práticas");
 		titulo = new Label("LoginApp Boas Práticas");
-		pane.getChildren().addAll(txLogin,txSenha,btEntrar,btSair,tex,titulo);
+		teste = new Label("Testando posição");
+		pane.getChildren().addAll(txLogin,txSenha,btEntrar,btSair,tex,titulo,teste);
 		
 	}
 
@@ -77,7 +79,8 @@ public class LoginAppBoasPraticas extends Application {
 		tex.setLayoutY(300);
 		titulo.setLayoutX((pane.getWidth() - titulo.getWidth()) / 2);
 		titulo.setLayoutY(60);
-
+		teste.setLayoutY(385);// altura
+		teste.setLayoutX(10); // horizontal
 	}
 
 	// ações dos componentes
