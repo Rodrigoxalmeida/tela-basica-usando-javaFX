@@ -18,7 +18,7 @@ public class LoginApp extends Application {
 		// anchorPane da total liberdade na localização dos componentes
 		AnchorPane pane = new AnchorPane();
 		
-		pane.setPrefSize(400, 300); // primeiro paramentro largura(Width) e o segundo altura(Height)
+		pane.setPrefSize(600, 400); // primeiro paramentro largura(Width) e o segundo altura(Height)
 		stage.setTitle("Cadastro");// titulo para janela
 		// codigo css para o painel
 		pane.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, blue 0%, silver 100%);");	
@@ -59,17 +59,17 @@ public class LoginApp extends Application {
 		 * pela largura do componente e dividiremos por 2. e fazendo para os outros componentes
 		 */
 		txLogin.setLayoutX((pane.getWidth() - txLogin.getWidth())/2);
-		txLogin.setLayoutY(50);
+		txLogin.setLayoutY(100);
 		txSenha.setLayoutX((pane.getWidth() - txSenha.getWidth())/2);
-		txSenha.setLayoutY(100);
+		txSenha.setLayoutY(150);
 		btEntrar.setLayoutX((pane.getWidth() - btEntrar.getWidth()) / 2);
-		btEntrar.setLayoutY(150);
+		btEntrar.setLayoutY(200);
 		btSair.setLayoutX((pane.getWidth() - btSair.getWidth()) / 2);
-		btSair.setLayoutY(200);
+		btSair.setLayoutY(250);
 		tex.setLayoutX((pane.getWidth() - tex.getWidth())/2);
-		tex.setLayoutY(250);
+		tex.setLayoutY(300);
 		titulo.setLayoutX((pane.getWidth() - titulo.getWidth())/2);
-		titulo.setLayoutY(10);
+		titulo.setLayoutY(60);
 	}
 
 	public static void main(String[] args) {
