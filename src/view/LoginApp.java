@@ -18,6 +18,8 @@ public class LoginApp extends Application {
 		AnchorPane pane = new AnchorPane();
 		
 		pane.setPrefSize(400, 300); // primeiro paramentro largura(Width) e o segundo altura(Height)
+		// codigo css para o painel
+		pane.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, blue 0%, silver 100%);");	
 		
 		TextField txLogin = new TextField();
 		txLogin.setPromptText("Digite o login");// metodo para dar um texto inicial
